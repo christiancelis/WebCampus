@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lenguajes de Programacion</title>
 </head>
 <body>
 
     <style>
+           
+
             body{
                 width: 100%;
-                height: auto;
+                font-size: 10px;
+                border: 1px solid black;
 
             }
 
             header{
                 text-align: center;
+                border: 1px solid black;
             }
 
+
             nav{
-                width: 100%;
+               
                 height: 100px;
                 
             }
@@ -32,51 +37,87 @@
             footer{
                 display: flex;
                 justify-content: space-around;
+                font-size: 10px;
+                gap: 30px;
+                border: 1px solid black;
+            
             }
 
-            main{
+            .a{
                 display: flex;
-                padding: 20px;
+                justify-content: space-around;
                 flex-direction: row;
+                gap: 30px;
+                border: 1px solid black;
             }
 
 
     </style>
 
     <header>
-        <h1>Encabezado</h1>
+        <h1>Lenguajes de programacion</h1>
         <nav>
             <ul>
-                <li><a href="">nav1</a></li>
-                <li><a href="">nav2</a></li>
-                <li><a href="">nav3</a></li>
-                <li><a href="">nav4</a></li>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Lenguajes populares</a></li>
+                <li><a href="">Paradigmas</a></li>
+                <li><a href="">Patrones de diseño</a></li>
             </ul>
         </nav>
     </header>
     <div>
         <main>
-            <section>
-                <video autoplay controls  width="200px" src="https://christiancelis.github.io/WebCampus/mediaporurl/videodeprueba.mp4"></video>
-                <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, asperiores eum doloremque beatae quidem alias nihil enim consequatur culpa impedit exercitationem! Maxime necessitatibus laborum libero beatae tempora provident molestiae architecto?</p>
-                </article>
+            <section style= "text-align:center">
+                <h1>Que son los lenguajes de programacion</h1>
+                <p>En informática, se conoce como lenguaje de programación a un programa destinado a la construcción de otros programas informáticos. Su nombre se debe a que comprende un lenguaje formal que está diseñado para organizar algoritmos y procesos lógicos que serán luego llevados a cabo por un ordenador o sistema informático, permitiendo controlar así su comportamiento físico, lógico y su comunicación con el usuario humano.</p>
             </section>
+            <br>
 
-            <section>
-                <article>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fugit sint magnam eaque consequatur consequuntur aut, delectus optio? Dolorem fuga quaerat possimus nemo error commodi hic nihil labore ipsam obcaecati.</p>
-                </article>
-                <video autoplay controls width="200px" src="https://christiancelis.github.io/WebCampus/mediaporurl/videodeprueba.mp4"></video>
-            </section>
+            <div class="a">
+                <section>
+                    <img width="200px" src="https://cdn-icons-png.flaticon.com/512/2535/2535490.png" alt="">
+                    <article>
+                        <h1>Lenguajes populares</h1>
+                        <p>Hay numerosas distinciones entre unos rankings y otros sobre los mejores lenguajes de programación, pero es cierto que hay varios que se repiten de forma constante y son los siguientes:
+    
+                            Python.
+                            Java.
+                            C.
+                            C++.
+                            JavaScript.
+                        </p>
+                    </article>
+                </section>
+    
+                <section>
+                    <article>
+                        <h1>Que son los paradigmas?</h1>
+                       <p>Los paradigmas de programación son modelos para resolver problemas comunes con nuestro código. Son caminos, guías, reglas, teorías y fundamentos que agilizan nuestro desarrollo y evitan que reinventemos la rueda.</p>
+                    </article>
+                    <img width="300px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5RoXmwa37EXV3jWXnFOmgDkbQPrA5XACxO1xP6Q9tQAAy-RgBRj1CYsY0n6ZVcgC0NrQ&usqp=CAU" alt="">
+                </section>
+            </div>
+           
         </main>
     </div>
     <br>
 
     <footer>
-        <section>Section 4</section>
-        <section>Section 5</section>
-        <section>Section 6</section>
+        <section>
+        <h1>Patrones de diseño</h1>
+        <p>Los patrones de diseño (design patterns) son soluciones habituales a problemas comunes en el diseño de software. Cada patrón es como un plano que se puede personalizar para resolver un problema de diseño particular de tu código. </p>
+        <img width="auto" src="data:image/png;base64,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" alt="">
+        </section>
+        <section>
+            <h1>Ventajas de Patrones de diseño</h1>
+            <p>Los patrones son un juego de herramientas que brindan soluciones a problemas habituales en el diseño de software. Definen un lenguaje común que ayuda a tu equipo a comunicarse con más eficiencia. </p>
+            <img width="200px" src="https://cdn-icons-png.flaticon.com/512/8712/8712643.png" alt="">
+        </section>
+        <section>
+            <h1>Historia: ¿de dónde provienen los patrones de diseño?</h1>
+            <p>¿Sabías que la idea de los patrones comenzó en la arquitectura con Christopher Alexander? Los libros que publicó describen la manera de construir arquitectura dinámica que fue la idea inspiracional para el uso de patrones en software</p>
+            <img width="200px" src="https://images.vexels.com/media/users/3/209763/isolated/preview/bda4a856dae5dc0ea8b3b687ab53a36a-dibujado-a-mano-libro-de-historia-egipcia.png" alt="">
+        </section>
     </footer>
     
 </body>
