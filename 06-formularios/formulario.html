@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <br><br>
+
+    <form action="index.html" method="POST">
+        <label for="fnombre">Nombre:</label>
+        <input type="text" id="fnombre" name="fnombre" minlength="1" maxlength="5" size="20" placeholder="Ingrese su nombre completo">
+        <br><br>
+
+        <label for="fbrowser">Browser</label>
+        <input type="text" name="fbrowser" id="fbrowser" list="browser" value="Colombiano" pattern="[a-zA-Z]{1,15}">
+        <!-- <datalist id="browser">
+            <option value="Opera"></option>
+            <option value="Brave"></option>
+            <option value="Edge"></option>
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+        </datalist> -->
+        <br><br>
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass" >
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="limpiar">
+    </form>
+
+    <br><br>
+
+    <form action="" method="get">
+
+        <h2>Lenguajes de Programacion:</h2>
+        <input type="radio" name="lenguajesp" id="java" value="Java">
+        <label for="lenguajesp">Java</label><br>
+        <input type="radio" name="lenguajesp" id="phyton" value="phyton">
+        <label for="lenguajesp">Phyton</label><br>
+        <input type="radio" name="lenguajesp" id="c++" value="c++">
+        <label for="lenguajesp">C++</label><br>
+        <input type="radio" name="lenguajesp" id="Javascript" value="javascript">
+        <label for="lenguajesp">Javascript</label><br><br>
+
+        <h2>Pasatiempos</h2>
+        <input type="checkbox" name="fpasatiempos" id="leer" value="leer">
+        <label for="fpasatiempos">Leer</label><br>
+        <input type="checkbox" name="fpasatiempos" id="tocarguitarra" value="tocarguitarra">
+        <label for="fpasatiempos">Tocar Guitarra</label><br>
+        <input type="checkbox" name="fpasatiempos" id="comer" value="comer">
+        <label for="fpasatiempos">Comer</label><br>
+        <input type="checkbox" name="fpasatiempos" id="bailar" value="bailar">
+        <label for="fpasatiempos">bailar</label><br><br>
+
+        <input type="button" value="Alerta" onclick="alert('Feliz Halloween')" ><br><br>
+
+        <label for="col">Escoja un color</label>
+        <input type="color" name="col" id="col"><br><br>
+
+
+        <label for="fechanac">Fechadenacimiento</label>
+        <input type="date" name="fechanac" id="fechanac"><br><br>
+        
+
+        <label for="fechaant">Ingrese una fecha anterior a 2000</label>
+        <input type="date" name="fechaant" id="fechaant" max="1999/12/31"><br><br>
+
+
+        <label for="fechapost">Ingrese una fecha POSTERIOR a 2020</label>
+        <input type="date" name="fechapost" id="fechapost" min="02/01/2020"><br><br>
+
+
+        <label for="fechahoranac">Fecha y hora de nacimiento</label>
+        <input type="datetime-local" name="fechahoranac" id="fechahoranac"><br><br>
+
+        <label for="e">Correo electronico</label>
+        <input type="email" name="e" id="e"><br><br>
+
+        <input width="100px" type="image" src="/06-formularios/mariposa.png" alt="icono de mariposa" onclick="alert('alas de mariposa')">   
+        <br><br>
+        
+        <label for="archivo">Escoja un archivo</label>
+        <input type="file" name="archivo" id="archivo" accept=".png,.jpg,.svg,.gif"><br><br>
+
+        <input type="hidden" name="formstate" id="formstate" value="completado"><br><br>
+   
+        <label for="mnac">Mes de nacimiento</label>
+        <input type="month" name="mnac" id="mnac"> <br><br>
+
+        <label for="age">Escoja la edad de una persona</label>
+        <input type="number" name="age" id="age" min="18" max="40" step="2" value="40">
+
+        
+        <label for="rango">Volumen</label><br><br>
+        <input type="range" name="rango" id="rango" min="0" max="100"  value="50"><br><br>
+
+        <br><br>
+<!-- 
+        <label for="sgoogle">Buscar en google</label>
+        <input type="search" name="q" id="sgoogle"> -->
+
+        <textarea name="tarea" id="tarea" cols="20" rows="10"></textarea>
+
+        <input type="submit" value="Enviar"><br><br>
+
+       
+
+    </form>
+
+
+
+
+</body>
+</html>
