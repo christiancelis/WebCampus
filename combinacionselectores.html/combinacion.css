@@ -1,0 +1,21 @@
+p+p{
+    color: tomato;
+}
+
+
+div ~ div span{
+    color: rebeccapurple;
+}
+
+div span{
+    font-weight: bold;
+}
+
+div + p + div{
+    color: Teal;
+}
+
+
+
+
+
