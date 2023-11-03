@@ -34,7 +34,7 @@ a{
 /*ejercicio2*/
 
 main{
-    width: 70%;
+    width: 100%;
 }
 
 main #Uno{
@@ -49,7 +49,7 @@ main #Uno{
 }
 
 #Dos div{
-    width: 200px;
+    width: 30%;
     height: 200px;
     margin: 0 auto;
     align-items: center;
@@ -95,7 +95,7 @@ footer div{
 /*ejercicio 3*/
 
 .content{
-    width: 70%;
+    width: 100%;
     height: 900px;
     background: linear-gradient(rgb(255, 255, 255), rgb(129, 129, 129),rgb(185, 183, 183));
     
