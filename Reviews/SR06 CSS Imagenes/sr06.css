@@ -2,10 +2,12 @@
     color: black;
     font-family: Arial;
     size: 0.9em;
+    list-style: none;
 }
 
 body{
-    width: 90%;
+    margin: auto;
+    width: 80%;
     padding: 20px 40px;
 
 }
@@ -15,7 +17,7 @@ main{
     
 }
 main section{
-    margin: 3px;
+    margin: 10px;
 }
 
 .articulo{
@@ -35,8 +37,10 @@ main section{
 
 
 #menu{
+    width: 100%;
     height: 40px;
-    background-color: rgb(25, 25, 216);
+    background-image: url(https://tphpxa.by.files.1drv.com/y4mvuwiyi8hP23DOZ_0YQnEbPAgoIlXi7sNCjnGEXInhxtbfaT0p8Pe3ijnLpVSgkwXASX_qlc6driKA95daXisWfw-naU2q-qMEYZz1TC_SnLCoLCyMlF2eexL2AnhzN3SPKcor_jTaHDZL6p1ClmxAWDad0P8ZFuMif8bqt4GbZYOWRfFrWHJpsP_knpP-ogL47mgXcYOd1j2o1mzMhB6ew);
+    background-size: cover;
     font-size: 1.3em;
     margin-bottom: 10px;
 }
@@ -49,7 +53,7 @@ main section{
     display: flex;
    justify-content: space-around;
    align-items: center;
-   list-style: none;
+  
 
 }
 
@@ -67,18 +71,22 @@ header{
     font-size: 0.9em;
 
 }
+#lateral a, main a{
+    color: blue;
+}
 
 #noticias{
     background-color: #d3caca;
     width: 150px;
-    height: 300px;
+    height: auto;
     margin-bottom: 10px;
     padding: 10px;
+    border: solid 1px;
 }
 #publicidad{
     background-color: rgb(225, 190, 63);
     width: 150px;
-    height: 300px;
+    height: auto;
     margin-bottom: 10px;
     padding: 10px;
 }
@@ -87,8 +95,10 @@ header{
     color: #003366;
 }
 
+
 #publicidad{
     color:#555;
+    border-style:dashed;
 }
 #publicidad a {
     color:#CC6600;
@@ -121,22 +131,44 @@ header{
     color: #166fc8d1;
 }
 
-#secundario section:nth-child(1){
-    width: 200px;
-    background-color: #555;
-    height: 100px;
+#secundario{
+    height: 100%;
+    border: solid 1px;
+    
 }
-#secundario section:nth-child(2){
+
+#secundario section{
     width: 200px;
-    background-color: #555;
-    height: 100px;
+    padding: 10px;
+    height: auto;
+}
+
+#secundario div{
+    width: 100%;
+    height: 50px;
+    text-align: justify;
+    background-color: #CC6600;
+    box-shadow: 0 4px 4px 0  red;
+
+}
+
+
+#secundario section h2{
+    padding: 10px;
 }
 
 article{
     padding: 10px;
+    display: inline-block;
+    gap: 10px;
 }
 article img{
     width: 320px;
+    float: left;
+    margin-right: 10px;
+}
+article section{
+    margin-bottom: 10px;
 }
 
 
