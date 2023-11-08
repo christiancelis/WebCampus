@@ -1,0 +1,32 @@
+body{
+    width: 100%;
+    margin: 0 10px;
+}
+
+h1
+{
+    
+    border: solid 2px #00f;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+h2{
+    
+    border: 2px solid #AAA;
+    padding-left: 5px;
+    margin-bottom: 15px;
+
+}
+
+ul{
+    
+    border: solid 2px #0F0
+
+}
+
+ul li{
+    margin-top: 15px;
+}

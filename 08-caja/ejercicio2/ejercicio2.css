@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgb(171, 128, 211);
+}
+
+ul{
+    margin-left: 20px 20px;
+}
+
+li:hover{
+   
+    background-color: blue;
+}
+
+li{
+    padding: 10px 10px;
+    margin: 10px 10px;
+    display: inline-block;
+}
+
+a{
+    color: aliceblue;
+}
+
+/*ejercicio2*/
+
+main{
+    width: 100%;
+}
+
+main #Uno{
+    height: 400px;
+    background-color:chocolate;
+    text-align: center;
+}
+
+#Dos{
+    height: auto;
+    background-color:tomato;
+}
+
+#Dos div{
+    width: 30%;
+    height: 200px;
+    margin: 0 auto;
+    align-items: center;
+    border: 3px solid white;
+}
+
+#Tres{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 179, 0);
+}
+
+main #Tres div{
+    padding-top: 30px;
+    width: auto;
+    height: 150px;
+}
+
+#Tres h1{
+   
+text-align: center;
+    margin: auto 10px;
+
+}
+
+#Tres p{
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer{
+    padding-top: 50px;
+    height: 200px;
+    background-color: cadetblue;
+    text-align: center;
+    
+}
+
+footer div{
+    padding: 20px auto;
+}
+
+/*ejercicio 3*/
+
+.content{
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(129, 129, 129),rgb(185, 183, 183));
+    
+}
+
+#cont-section{
+    width: 70%;
+    height: 700px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+#cont-section img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+#cont-secdos{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgb(221, 169, 37);
+}
+
+#cont-secdos #cont-uno{
+    display: flex;
+    justify-content: center;
+}
+
+#cont-secdos div  img{
+    height: 100px;
+}
+#cont-secdos #cont-dos{
+    text-align: start;
+}
+
+
+
+
+

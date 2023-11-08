@@ -1,0 +1,47 @@
+*{
+   font-size: 65.2%;
+}
+
+#texthtml{
+    color: black;
+}
+
+body{
+    font-size: 3rem;
+}
+
+strong , i, p, u, sub, sup{
+    color: maroon;
+    border: 3px solid black;
+}
+
+p strong{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.title,li{
+    color: purple;
+}
+
+ul li{
+    color: red;
+}
+
+ol li{
+    color: blue
+}
+
+
+sub{
+    color:coral;
+    font-size: 1rem;
+    font-family: 'Segoe UI' ;
+
+}
+
+
+/*Mala practica afectar a varios selectores con el mismo id*/
+
+
+

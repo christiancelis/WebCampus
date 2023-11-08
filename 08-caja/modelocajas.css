@@ -1,0 +1,15 @@
+main{
+    width: 600px;
+    border: 1px solid gray;
+}
+
+div{
+    padding: 20px;
+    border: 1px solid tomato
+}
+
+.column{
+    width: 25.74%;
+    border: 1px solid mediumpurple;
+    display: inline-block;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            padding: 20px;
+        }
+        section{
+            padding: 10px;
+            text-align: center;
+        }
+
+        
+        .first-box{
+            width: 70%;
+            border: 3px;
+            border-top: green dotted;
+            border-right: yellow dashed;
+            border-bottom: red dotted;
+            border-left: dashed blue ;
+            margin-bottom: 20px;
+        }
+
+
+        .first{
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .second-box{
+            width: 70%;
+            border: 3px;
+            border-top:aqua 3px solid;
+            border-left: black 10px solid;
+            border-bottom: palevioletred solid;
+            border-right: black 10px solid;
+        }
+
+        #second{
+            width: auto;
+        }
+
+        #fourth-box{
+            margin-top: 20px;
+            width: 70%;
+            
+        }
+
+        #fourth-box,  #fourth-box div{
+            border: solid;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+
+    
+    <section class="first-box"><p>Esta es una caja con diferentes tipos de bordes</p></section>
+    <section class="second-box"><p>Esta es otra caja con diferentes tipos de bordes</p></section>
+    <section class="first-box first">
+            <div id="second" class="second-box">
+                <p>Esta es una caja con diferentes tipos de bordes dentro de otra caja</p>
+            </div>
+    </section>
+    <section id="fourth-box">
+        <div><div> <div> <div><div><p>Estas son cajas dentro de cajas</p></div></div></div></div></div>
+    </section>
+</main>
+    
+</body>
+</html>
