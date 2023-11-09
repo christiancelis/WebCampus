@@ -1,0 +1,69 @@
+*{
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: auto;
+}
+
+[class="menu-horizontal"]{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    gap: 40px;
+   
+}
+
+[class="menu-horizontal"] li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+.menu-vertical li{
+    
+    padding: 10px 20px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+
+}
+
+.menu-vertical span{
+    width: 30px;
+    background-image: url(./assets/flecha_inactiva.png);
+    background-repeat: no-repeat;
+    padding-right: 30px;
+}
+
+.menu-vertical li:hover{
+    background-color: #E4E4E4;
+    
+    span{
+        background-image: url(./assets/flecha_activa.png);
+    }
+}
+
+
+[class="menu-horizontal"] li:hover{
+    background-color: blue;
+    
+    
+    .menu-vertical{
+        display:inline;
+    }
+}
+
+
