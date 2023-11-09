@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Multiples</title>
+    <style>
+
+        button.classic:active{
+            border: 10px solid rgb(236, 235, 233);
+        }
+
+        .classic{
+            border: 2px solid orange;
+        }
+
+        .primary{
+            font-size: 5rem;
+        }
+
+        .large{
+            width: 50%;
+        }
+        
+        button.classic.large.primary{
+            color: rgb(206, 60, 60);
+            font-size: 4rem;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+
+
+        button[disabled]{
+            color: green;
+            width: 70%;
+            height: 120px;
+            border-radius: 30%;
+        }
+
+        [disabled]{
+            border: 4px solid rgb(0, 204, 255);
+        }
+        /* expresiones regulares*/
+
+        a[rel="nofollow"]{
+            background-color: red;
+        }
+
+        a[rel="nofollow"]:link{
+            color: yellow;
+            border: 3px solid red;
+            font-weight: 20px;
+        }
+
+        a[rel="nofollow"]:{
+            color: rgb(0, 255, 42);
+            border: 3px solid red;
+            font-weight: 20px;
+        }
+        
+        [data-mood~="happy"]{
+            background-color: green;
+            color: white;
+            padding: 5px;
+        }
+
+          
+        [lang|="es"]{
+            background-color: rgb(255, 25, 25);
+            color: white;
+            padding: 5px;
+        }
+
+        a[href]::after{
+            content: "URL: [" attr(href)"]";
+            display: inline-block;
+            color: #666;
+        }
+
+        a[href^="http:"]::after{
+            margin-left: 10px;
+            content: "(Pagina no segura) ---> " attr(href) ;
+            color: red;
+        }
+
+
+        /*que termine con*/
+
+        [href $= ".pdf"]::after{
+            content: url(/PrimeraPaginaWeb/assets/perro2.jpg);
+            width: 20px;
+        }
+
+        /*todo lo que contenga*/
+
+        [href*="campuslands"]{
+            background-color: rosybrown;
+        }
+    
+        [lang|="es"]:hover{
+            background-color: aqua;
+        }
+
+        input:focus{
+            border: red 6px solid;
+        }
+
+
+        form:focus-within{
+            background: yellow;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <button class="classic primary large">boton</button>
+    <button class="classic large" disabled>boton 2</button>
+    <br><br>
+    <a href="www.campuslands.com" rel="nofollow">Ancla</a>
+        <br><br>
+    <a href="google.com.co">Google Search</a>
+    <br><br>
+
+    <div data-mood="happy sad">Hola</div>
+    <br><br>
+
+    <div lang="es-MX en-EN">Lenguaje</div>
+
+    <br><br>
+
+    <a href="https://campuslands.com"></a>
+    <a href="http://campuslands.com"></a>
+    <a href="https://campuslands.pdf" download>Documento de campuslands</a>
+
+<br><br>
+<form action="">    <label for="nombre">NOMBRE</label>
+    <br><br>
+    <input type="text" name="nombre" id="nombre">
+    <br>
+    <label for="lastname">APELLIDO</label>
+    <BR>
+    </BR>
+    <input type="text" name="lastname" id="lastname">
+    <br>
+</form>
+
+</body>
+</html>
