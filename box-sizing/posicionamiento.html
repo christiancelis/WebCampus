@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            margin-top: 20px;
+        }
+
+
+        .box{
+            position: relative;
+            width: 70%;
+            height: 230px;
+            border: 1px solid rgb(136, 128, 255);
+        }
+
+        .box-content{
+            position: absolute;
+            background-color: grey;
+            width: 200px;
+            height: 200px;
+            left: 30%;
+            top:4px ;
+
+        }
+
+        div{
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            position: absolute;
+            border-radius: 50%;
+            left: 51%;
+            top: 50%;
+
+        }
+
+        .content{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .content section:nth-child(1){
+            width: 100%;
+            height: 200px;
+            background-color: blue;
+        }
+
+
+        .content section:nth-child(2){
+            width: 50%;
+            height: 300px;
+            background-color: rgb(72, 72, 231);
+            position: absolute;
+            top: 200px;
+            
+        }
+
+        .content section:nth-child(3){
+            width: 50%;
+            height: 300px;
+            background-color: rgb(158, 158, 158);
+            position: absolute;
+            left: 50%;
+            top: 200px;
+        }
+        .content section:nth-child(4){
+            width: 70%;
+            height: 600px;
+            background-color: rgb(65, 63, 63);
+            position: absolute;
+            top: 500px;
+        }
+        .content section:nth-child(5){
+            width: 30%;
+            height: 300px;
+            background-color: rgb(230, 114, 6);
+            position: absolute;
+            top: 500px;
+            left: 70%;
+        }
+        .content section:nth-child(6){
+            width: 30%;
+            height: 300px;
+            background-color: rgb(230, 6, 6);
+            position: absolute;
+            top: 800px;
+            left: 70%;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <article class="box">
+        <section class="box-content">
+            <div>
+
+            </div>
+        </section>
+    </article>
+
+
+    <article class="content">
+        <section><h1>Seccion 1</h1></section>
+        <section><h1>Seccion 2</h1></section>
+        <section><h1>Seccion 3</h1></section>
+        <section><h1>Seccion 4</h1></section>
+        <section><h1>Seccion 5</h1></section>
+        <section><h1>Seccion 6</h1></section>
+    </article>
+
+    
+</body>
+</html>
