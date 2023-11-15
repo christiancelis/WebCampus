@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    body{
+        padding: 20px;
+    }
+
+    .Uno{
+        width: 100%;
+        height: 100px;
+   
+    }
+
+    h1{
+        margin: 30px;
+    }
+
+    .Uno ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+        gap: 5px;
+    }
+    .Uno li{
+
+        width: 100%;
+        height: 100%;
+        background-color: rgba(123,198,199,0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* dos*/
+    .Dos{
+        margin: 10px;
+        width: 100%;
+        height: auto;
+   
+    }
+
+    .Dos ul{
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5px;
+    }
+    .Dos li{
+        height: 40px;
+        width: 100%;
+        background-color: rgba(123,198,199,0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+     /* Tres*/
+
+     .Tres{
+        width: 100%;
+     }
+
+     .Tres ul{
+
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 5px;
+     }
+
+     .Tres li{
+        width: 100%;
+       
+        background-color: rgba(123,198,199,0.8);
+     }
+
+     a{
+        color: rgb(0, 0, 0);
+        font-family: sans-serif;
+     }
+
+
+
+</style>
+<body>
+
+    
+
+    <section class="Uno">
+        <h1>Menu horizontal con flex</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Opciones</a></li>
+            <li><a href="">Planes</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </section>
+
+    <section class="Dos">
+        <h1>Menu Vertical con flex</h1>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Servicios</a></li>
+            <li><a href="">Opciones</a></li>
+            <li><a href="">Planes</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </section>
+
+
+    <section class="Tres">
+        <h1>Bloques Paralelos</h1>
+        <ul>
+            <li><a href="">Solo tengo una linea</a></li>
+            <li><a href="">Este texto ocupa mas que el de al lado son dos lines</a></li>
+            <li><a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum <br><br> nihil facilis dignissimos voluptatem magni maxime nemo voluptate necessitatibus voluptates error. Voluptates ratione voluptatum minima hic beatae autem unde, repellendus cumque?</a></li>
+        </ul>
+    </section>
+    
+    
+    
+</body>
+</html>

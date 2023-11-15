@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: beige;
+        }
+        h1{
+            margin-bottom: 10px;
+        }
+
+        .contenedor{
+            width: 80%;
+            height: 600px;
+            margin: 0 auto;
+            display: flex;
+            justify-content:flex-start;
+            flex-flow: row wrap ;
+            border: 1px solid black;
+            padding: 20px;
+            background-color: #ccc;
+            scrollbar-face-color: rgb(6, 255, 255);
+            overflow-y: scroll;
+        }
+
+        ::-webkit-scrollbar{
+            background-color: aqua;
+        }
+
+        ::-webkit-scrollbar-thumb{
+            background-color: red;
+            border-radius: 20%;
+        }
+
+
+        .item{
+            border: 1px solid rgb(20,69,69);
+            background-color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            width: 120px;
+            line-height: 120px;
+            text-align: center;
+            margin: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Aprendiendo flexbox</h1>
+    <section class="contenedor">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+    </section>
+</body>
+</html>
