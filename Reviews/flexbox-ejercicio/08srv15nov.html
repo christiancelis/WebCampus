@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        body{
+            width: 100%;
+            height: 200px;
+            padding: 20px;
+        }
+
+        .uno{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            gap: 10px;
+        }
+
+        .uno article{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 2px 2px 2px 2px grey;
+            z-index: 2;
+        }
+
+        .uno header{
+            width: inherit;
+            text-align: center;
+            height: 40px;
+            padding: 10px;
+            color: white;
+            background-color: black;
+        }
+
+        .uno div{
+            flex-grow: 1;
+        }
+
+
+        .uno footer{
+            width: inherit;
+            text-align: center;
+            height: 40px;
+            padding: 10px;
+            color: white;
+            background-color: rgb(109, 103, 103);
+        }
+
+
+        /* dos*/
+
+    .dos{
+        border: 2px solid black;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+
+    .dos section:first-child{
+        padding: 10px;
+        flex-grow: 2;
+        background-color: green;
+        color: white;
+        height: 100%;
+    }
+
+    .dos section:nth-child(2){
+        flex-grow: 1;
+        width: 40%;
+        height: 50%;
+        padding: 10px;
+        background-color: grey;
+    }
+
+    .dos section:nth-child(3){
+        padding: 10px;
+        background-color: grey;
+
+    }
+
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicio 1 <br><br></h1>
+    <section class="uno">
+        <article>
+            <header>Tarjeta izquierda</header>
+            <div>contenido del cuerpo <br>
+            contenido del cuerpo <br>
+        contenido del cuerpo</div>
+            <footer>Pie</footer>
+        </article>
+        <article>
+            <header>Tarjeta centro</header>
+            <div>contenido del cuerpo</div>
+            <footer>Pie</footer>
+
+        </article>
+        <article>
+            <header>Tarjeta derecha</header>
+            <div>contenido del cuerpo</div>
+            <footer>Pie</footer>
+        </article>
+    </section>
+
+<br><br>
+    <h1>Ejercicio 2 <br><br></h1>
+    
+    <article class="dos">
+        <section>Columna izquierda</section>
+        <section>Derecha parte alta</section>
+        <section>Derecha parte baja</section>
+    </article>
+</body>
+</html>
