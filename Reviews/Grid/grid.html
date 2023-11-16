@@ -64,22 +64,22 @@
 
 
         .dos{
-            width: 60%;
             display: grid;
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: 20% 20% 20% 20%;
             grid-template-rows: auto auto auto;
-            gap: 7px;
+            gap: 10px;
         }
 
         .dos section{
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 70px;
+            background-size: 50%;
             color: white;
         }
 
 
         .dos section:nth-child(1){
+            padding: 10px;
             grid-column: 1/3;
             grid-row: 1/3;
             background-color: rgb(54, 55, 58);
@@ -141,13 +141,21 @@
             background-color: rgb(54, 55, 58);
         }
 
+        div{
+           width: 50vh;
+           background-color: grey;
+           padding: 20px;
+        }
+
         .dos p{
-            text-align: justify;
+            text-align: center;
             padding: 50px;
         }
 
-        div{
-           width: 60%;
+
+        .dos h1{
+            font-size: 50px;
+            margin-bottom: 2px;
         }
        
 
