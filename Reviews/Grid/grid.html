@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+
+        body{
+            width: 100%;
+            height: auto;
+        }
+
+        .uno{
+            width: 100%;
+            height: 500px;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto auto;
+            gap: 7px;
+        }
+
+        .uno section{
+            background-color: aqua;
+        }
+
+
+        .uno section:nth-child(1){
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .uno section:nth-child(2){
+            grid-column: 2/4;
+            grid-row: 1/3;
+        }
+
+        .uno section:nth-child(3){
+            grid-column: 1/2;
+            grid-row: 2/5;
+        }
+        .uno section:nth-child(4){
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .uno section:nth-child(8){
+            grid-column: 1/4;
+            grid-row: 5/6;
+        }
+
+
+        .uno p{
+            text-align: center;
+            padding: 50px;
+        }
+
+
+        /* dos */
+
+
+        .dos{
+            width: 60%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 7px;
+        }
+
+        .dos section{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70px;
+            color: white;
+        }
+
+
+        .dos section:nth-child(1){
+            grid-column: 1/3;
+            grid-row: 1/3;
+            background-color: rgb(54, 55, 58);
+        }
+
+        .dos section:nth-child(2){
+            grid-column: 3/4;
+            grid-row: 1/2;
+            border-radius: 50%;
+            background-color: rgb(231, 163, 60);
+        }
+
+        .dos section:nth-child(3){
+            background-image: url(/grid/icon-megaphone.png);
+            grid-column: 4/5;
+            grid-row: 1/2;
+            border-radius: 50%;
+            background-color: rgb(143, 150, 172);
+        }
+        .dos section:nth-child(4){
+            grid-column: 3/4;
+            grid-row: 2/3;
+            border-radius: 50%;
+            background-color: rgb(54, 55, 58);
+            background-image: url(/grid/icon-bicycle.png);
+            
+        }
+        .dos section:nth-child(5){
+            grid-column: 4/5;
+            grid-row: 2/3;
+            border-radius: 50%;
+            background-color: rgb(143, 150, 172);
+            background-image: url(/grid/icon-bug.png);
+        }
+        .dos section:nth-child(6){
+            grid-column: 1/2;
+            grid-row: 3/4;
+            border-radius: 50%;
+            background-color: rgb(231, 163, 60);
+            background-image: url(/grid/icon-fast-food.png);
+        }
+        .dos section:nth-child(7){
+            grid-column: 2/3;
+            grid-row: 3/4;
+            border-radius: 50%;
+            background-color: rgb(54, 55, 58);
+        }
+        .dos section:nth-child(8){
+            grid-column: 3/4;
+            grid-row: 3/4;
+            border-radius: 50%;
+            background-color: rgb(143, 150, 172);
+            background-image: url(/grid/icon-game-controller.png);
+        }
+        .dos section:nth-child(9){
+            grid-column: 4/5;
+            grid-row: 3/4;
+            border-radius: 50%;
+            background-color: rgb(54, 55, 58);
+        }
+
+        .dos p{
+            text-align: justify;
+            padding: 50px;
+        }
+
+        div{
+           width: 60%;
+        }
+       
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio1</h1>
+    
+    <article class="uno">
+        <section><p>1</p></section>
+        <section><p>2</p></section>
+        <section><p>3</p></section>
+        <section><p>4</p></section>
+        <section><p>5</p></section>
+        <section><p>6</p></section>
+        <section><p>7</p></section>
+        <section><p>8</p></section>
+    </article>
+
+    <br><br>
+    <h1>Ejercicio2</h1>
+    <br><br>
+
+    <div>
+
+   
+    <article class="dos">
+        <section>
+            <h1>Grid Layout IV</h1>            
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, quisquam? Du
+        </section>
+        <section><p></p></section>
+        <section><p></p></section>
+        <section><p></p></section>
+        <section><p></p></section>
+        <section><p></p></section>
+        <section><p></p></section>
+        <section><p></p></section>
+        <section><p></p></section>
+    </article>
+</div>
+</body>
+</html>
