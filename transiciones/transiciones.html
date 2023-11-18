@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .caja{
+            margin-top: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            transition:  all 0.5s 100ms;
+
+        }
+
+        .caja:hover{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            rotate: 180deg;
+            border-radius: 50%;
+            transition: width 0.5s 15s, heigth 3s 30s, background-color 4s 15s, rotate 5s 8s , border-radius 6s 5s;
+        }
+
+        .parent > div[class]{
+            width: 12em;
+            min-width: 12em;
+            padding: 3px;
+            margin-bottom: 4px;
+            background-color: black;
+            color: white;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .parent:hover > div[class]{
+            width: 90vw;
+            min-width: 24em;
+            background-color: blue;
+            color: orange;
+            border: 1px solid orange;
+            transition: all 1s;
+        }
+
+        .easy{
+            transition-timing-function: ease;
+        }
+
+        .easyin{
+            transition-timing-function: ease-in;
+        }
+
+        .easyout{
+            transition-timing-function: ease-out;
+        }
+
+        .easyinout{ 
+            transition-timing-function: ease-in-out;
+        }
+
+        .linear{
+            transition-timing-function: linear;
+        }
+
+        .cb{
+            transition-timing-function:cubic-bezier(0,1.42,1,-1.38);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Transiciones</h1>
+    <br><br>
+
+    <div class="caja">
+
+    </div>
+
+    <br><br>
+
+    <div class="parent">
+        <div class="easy">Ease</div>
+        <div class="easyin">Ease-in</div>
+        <div class="easyout">Ease-out</div>
+        <div class="easyinout">Ease-in-out</div>
+        <div class="linear">Linear</div>
+        <div class="cb">Cubic-bezier</div>
+    </div>
+</body>
+</html>
