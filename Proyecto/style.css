@@ -47,7 +47,7 @@ header nav{
 
 .hero{
     z-index: 0;
-    background-image: url(/assets/hero-backgroung.jpg);
+    background-image: url(https://christiancelis.github.io/WebCampus/Proyecto/assets/hero-backgroung.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 0 1px 0 black;
