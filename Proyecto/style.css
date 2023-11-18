@@ -125,7 +125,7 @@ header nav{
     .perf h1{
         color: var(--blue-minimalist--);
         font-weight: 700;
-        font-size: 7rem;
+        font-size: 5rem;
         text-align: center;
         margin-bottom: 40px;
     }
