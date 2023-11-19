@@ -21,13 +21,8 @@ html {
     text-decoration: none;
 }
 
-body{
-    width: 100%;
-    height: auto;
-}
 
 .Segmento-uno{
-    height: auto;
     display: grid;
     grid-template-columns: 5% repeat(12,1fr) 5%;
     grid-template-rows: repeat(40,auto);
@@ -71,8 +66,8 @@ header nav{
     }
 
     .hero{
-        height: 700px;
-        margin-top:30px ;
+        height: 60vh;
+        margin-top:10px ;
         padding: 40px;
         display: flex;
         flex-direction: column;
@@ -88,17 +83,18 @@ header nav{
 
     .hero div span{
         color: var(--orange-minimalist--);
-        font-size: 6rem;
+        font-size: 5rem;
         font-weight: 700;
     }
 
     .hero div p{
         color: white;
-        font-size: 6rem;
+        font-size: 5rem;
         font-weight: 400;
     }
 
     .hero button{
+        margin-top: 10px;
         width: 90%;
         height: 60px;
         border-radius: 30px;
@@ -116,8 +112,7 @@ header nav{
 
     
      .perf{
-        margin-top: 100px;
-        height: auto;
+        margin-top: 40px;
         grid-column: 2/14;
         grid-row: 11/12;   
     }
@@ -125,7 +120,7 @@ header nav{
     .perf h1{
         color: var(--blue-minimalist--);
         font-weight: 700;
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
         margin-bottom: 40px;
     }
@@ -137,36 +132,34 @@ header nav{
 
     .perf section{
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
       
     }
 
     .perf p{
-        padding: 0 90px 0 60px;
-        grid-column: 9/14;
+        grid-column: 2/14;
         font-weight: 200;
-        font-size: 4rem;
+        font-size: 2rem;
     }
     
     .perf section img{ 
         filter: drop-shadow(0px 0px 10px 10px);
         filter:brightness(80%);
-        grid-column: 1/7;
-        width: 39rem;
+        grid-column: 2/14;
+        width:50%;
         border-radius: 30px;
     }
 
-    .Segmento-dos .dos{
-        margin-top: 0;
-        padding-top: 0;       
-        height: auto;
+    .Segmento-dos .dos{    
         background-color: var(--yellow-minimalist--);
     }
 
     .seguridad{
         grid-column: 2/14;
         grid-row: 3/10;
-        font-size: 3.5rem;
+        font-size: 2rem;
         font-weight: 100;
         color: rgb(232, 232, 222);
     }
@@ -184,40 +177,27 @@ header nav{
     }
     
     .caja{
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
-        height:500px;
         margin: 40px 10px 20px 10px;
-        position: static;
-
     }
 
     .caja section{
+        grid-column: 2/14;
+        margin: 50px 0 0 0;
         padding-top: 100px;
     }
-    .caja img{
-        position: absolute;
-        width: 300px;
-       
-    }
-    .caja .box-i{   
-        width: 200px;
+
+    .iuno{
+        width: 120px !important;
     }
 
-    .caja .iuno{
-        top: 1740px;
-        position: absolute;
+    .caja .iuno, .idos, .itres{
+        width: 100px;
+       position: absolute;
+       top: 1%;
     }
-    
-    .caja .idos{
-        top: 2350px;
-        position: absolute;
-    }
-    
-    .caja .itres{
-        top: 2900px;
-        position: absolute;
-    }
-   
-}
+
+}    
