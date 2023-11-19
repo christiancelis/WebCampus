@@ -53,17 +53,61 @@ header nav{
 
     nav{
         padding-top: 1rem;
+        position: relative;
     }
     .center-menu{
         display: none;
+        top: 60px;
+        position: absolute;
+        z-index: 3;
     }
-    .left-menu img{
-        width: 2.5rem;
+   
+    .center-menu li{
+        padding:20px;
+        border: solid 2px black;
+    }
+   
+
+    [class="icheck"]:checked ~ .center-menu{
+        display: block;
+        width: 200px;
+        background-color: white;
+        transition: all 20ms ease-in-out ;
+    }
+
+    .icheck{
+        opacity: 0;
+    }
+
+    .icheck:checked ~ .abrir{
+        transition: all 50ms ease-in-out ;
+        opacity: 0;
+    }
+    .icheck~ .cerrar{
+        opacity: 0;
+    }
+    .icheck:checked ~ .cerrar{
+        transition: all 50ms ease-in-out ;
+        opacity: 100;
+    }
+
+    .icheck,.check-icon{
+        width: 30px;
+        height: 30px;
+    }
+
+    .check-icon{
+        position: absolute;
+        pointer-events: none;
     }
 
     .right-menu img{
+        justify-self: flex-start;
         width: 10rem;
     }
+
+
+
     .hero{
         filter: drop-shadow(0px 0px 10px 10px);
         filter:brightness(90%);
@@ -189,7 +233,7 @@ header nav{
         align-items: center;
         margin: 40px 10px 20px 10px;
     }
-    
+
     .iuno{
         width: 9rem !important;
     }
