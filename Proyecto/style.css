@@ -359,7 +359,13 @@ header nav{
    padding: 6px;
     height: 30px;
     font-size: 1.3rem;
+    margin-bottom: 10px;
   }
+
+  .derechos span{
+    color: var(--yellow-minimalist--);
+    font-weight: 700;
+}
 
 
 
