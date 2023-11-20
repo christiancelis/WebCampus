@@ -1,0 +1,38 @@
+:root{
+    --orange-minimalist--: #D9B080;
+     --blue-minimalist--: #1A3284;
+     --yellow-minimalist--: #D6CA77;
+     --blue-aqua-minimalist--: #2971BF;
+     --aqua-minimalist--: #57BED1;
+ }
+ 
+ html {
+     font-size: 62.5%;
+     font-family: 'Manrope', sans-serif;;
+   }
+ 
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     text-decoration: none;
+ }
+
+ .contacto-maps{
+    display: grid;
+    grid-template-columns: 5% repeat(12,1fr) 5%;
+    grid-row: auto;
+ }
+
+ .contacto-maps div{
+    border: 1px solid black;
+    grid-column: 2/14;
+ }
+
+ .contacto-maps .mapa{
+    margin: 0 auto;
+ }
+
+
+ 
