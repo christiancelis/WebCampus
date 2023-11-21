@@ -1,0 +1,81 @@
+:root{
+    --orange-minimalist--: #D9B080;
+     --blue-minimalist--: #1A3284;
+     --yellow-minimalist--: #D6CA77;
+     --blue-aqua-minimalist--: #2971BF;
+     --aqua-minimalist--: #57BED1;
+ }
+ 
+ html {
+     font-size: 62.5%;
+     font-family: 'Manrope', sans-serif;;
+   }
+ 
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     text-decoration: none;
+ }
+
+ .servicio{
+    display: grid;
+    grid-template-columns: 5% repeat(12, 1fr)  5%;
+    grid-template-rows: auto;
+      
+ }
+
+ .servicio article{
+    grid-column: 2/14;
+ }
+
+ .title-servicios{
+    font-size: 4rem;
+    margin: 20px 0;
+    
+ }
+
+ .servicio section{
+    font-size: 1.7rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 30px;
+ }
+
+ .servicio section div{
+    display: flex;
+    flex-direction: column;
+ }
+
+ section img{
+    width:200px;
+    margin: 0 auto;
+ }
+
+ .servicio section h1{
+    font-size: 2rem;
+ }
+ .servicio section p{
+    margin: 10px 0 ;
+ }
+
+ .themes-servicios{
+    grid-column: 2/14;
+    margin-bottom: 20px;
+ }
+
+ .themes-servicios ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+ .themes-servicios li{
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 10px;
+ }
+

@@ -327,8 +327,7 @@ header nav{
         padding:20px;
         border: solid 2px black;
     }
-    
-    
+        
     [class="icheck"]:checked ~ .center-menu{
         display: block;
         width: 200px;
@@ -375,6 +374,7 @@ header nav{
    .seguridad{
     grid-column: 2/14;
    }
+
    
 }
 
@@ -392,7 +392,23 @@ header nav{
 
     .center-menu li{
         padding-left: 50px;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+    }
+
+    .center-menu a{
+        color: black;
+    }
+
+    .center-menu a:hover{
+        padding: 10px;
+        color: var(--blue-minimalist--);
+        font-weight: 700;
+        border: 1px solid var(--blue-minimalist--);
+    }
+
+      .right-menu img{
+        justify-self: flex-start;
+        width: 10rem;
     }
 
 
