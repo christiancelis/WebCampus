@@ -411,7 +411,7 @@ header nav{
     }
     
     .icheck{
-        opacity: 0;
+        opacity:0;
     }
     
     .icheck:checked ~ .abrir{
