@@ -9,8 +9,12 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Manrope', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
   }
+
+  .fondo-animado, .sombra{
+    display: none;
+}
 
 *{
     box-sizing: border-box;
@@ -26,10 +30,13 @@ html {
     grid-template-rows: auto
 }
 
+
+
 header, nav{
     grid-column: 2/14;
     grid-row: 1/2;
 }
+
 
 header nav{
     display: flex;
@@ -305,7 +312,7 @@ header nav{
     width: 13rem;
   }
   .redes-sociales img{
-    width: 20px;
+    width: 30px;
   }
 
   .derechos{
@@ -322,7 +329,7 @@ header nav{
 }
 
 
-@media (max-width:768px){
+@media (width<=768px){
     .center-menu li{
         padding:20px;
         border: solid 2px black;
@@ -368,17 +375,10 @@ header nav{
     }
 }
 
-
-
-@media (min-width: 480px) and (max-width: 768px){
-   .seguridad{
-    grid-column: 2/14;
-   }
-
-   
-}
-
-@media (min-width: 768px){
+@media (width>=768px){
+    .seguridad{
+        grid-column: 2/14;
+       }
 
     .icheck , .abrir, .cerrar{
         display: none;
@@ -408,44 +408,46 @@ header nav{
 
       .right-menu img{
         justify-self: flex-start;
-        width: 10rem;
+        width: 14rem;
     }
 
 
 
     .hero{
         display: flex;
+        justify-content: center;
         flex-direction: row;
+        padding: 0;
+        margin: 0;
+        gap:20px;
         z-index: 0;
         background: none;
         box-shadow: 0 0 0;
-    
     }
 
     .hero-uno{
-        height: 60vh;
+        padding: 30px;
         margin-top:10px ;
         display: flex;
-        justify-content: center;
+        justify-content:flex-start;
         flex-direction: column;
-        align-items: center;
-        grid-column: 2/14;
-        grid-row: 2/10;
-        border-radius: 40px;
+        align-items: flex-start;
+        border-radius: 30px;
         translate: 0px 2px ;
         transition: 0.2s ease-in ;
         filter: drop-shadow(0px 0px 10px 10px);
         filter:brightness(90%);
+        border: 1px solid black;
 
     }
     .hero section p{
         color: rgb(132, 124, 124);
         font-weight: 300;
-        font-size: 50px;
+        font-size: 4rem;
     }
 
     .hero section span{
-        font-size: 60px;
+        font-size: 5rem;
     }
 
     .hero button{
@@ -462,11 +464,13 @@ header nav{
 
 
     .hero-dos{
+        width: auto;
+        border: 1px solid black;
         display: block;
     }
 
     .hero-dos img{
-        width: 500px;
+        width: 300px;
     }
     
     .seguridad{
@@ -540,4 +544,84 @@ header nav{
 
 }
 
-  
+@media (width>=1280px){
+
+    .Segmento-uno header{
+        position: sticky;
+    }
+
+
+
+    .fondo-animado, .sombra{
+        display: block;
+    }
+
+    .sombra{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background-color: rgb(0, 0, 0, 0.1);
+        mix-blend-mode: overlay;
+
+    }
+
+   .fondo-animado{
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+        position: absolute;
+        object-fit: cover;
+    }
+
+    nav a{
+        font-size: 1.6rem;
+    }
+    .hero-uno{
+        border: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-dos{
+        display: none;
+    }
+
+    .hero{
+        position: relative;
+        height: 90vh;
+        border-radius: 10px 0;
+        grid-column: 1/-1;
+        background-image: url(/assets/hero-video.mp4);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .hero-uno button{
+        background-color: rgb(255, 221, 0);
+      
+        margin-top: 30px;
+    }
+
+    .hero-uno button:hover{
+        background-color: rgb(255, 225, 29);
+    }
+
+    .hero-uno button a{
+       color: #1A3284;
+        font-size: 2.5rem;
+    }
+
+    
+
+
+
+    .hero-uno div p span{
+        font-size: 10rem;
+    }
+    .hero-uno div p{
+        color: white;
+        font-size: 5rem;
+    }
+}
