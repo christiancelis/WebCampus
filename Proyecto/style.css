@@ -388,6 +388,13 @@ header nav{
     font-weight: 700;
 }
 
+.titulo-carrousel{
+    text-align: center;
+    margin: 70px 0;
+    font-size: 3.2rem;
+    color: var(--blue-minimalist--);
+}
+
 
 @media (width<=768px){
 
@@ -437,6 +444,22 @@ header nav{
 }
 
 @media (width>=768px){
+
+
+    .perf section{
+        justify-content: center;
+    }
+
+    .perf p{
+        color: white;
+        border: 1px solid;
+        text-align: center;
+        padding: 30px;
+        margin: 0;
+        background-color: grey;
+        font-size: 3rem;
+    }
+
     .seguridad{
         grid-column: 2/14;
        }
@@ -490,17 +513,12 @@ header nav{
         padding: 30px;
         margin-top:10px ;
         display: flex;
-        justify-content:flex-start;
+        justify-content:center;
         flex-direction: column;
         align-items: flex-start;
-        border-radius: 30px;
-        translate: 0px 2px ;
-        transition: 0.2s ease-in ;
-        filter: drop-shadow(0px 0px 10px 10px);
-        filter:brightness(90%);
-        border: 1px solid black;
-
     }
+
+
     .hero section p{
         color: rgb(132, 124, 124);
         font-weight: 300;
@@ -521,12 +539,11 @@ header nav{
 
     .hero-dos{
         width: auto;
-        border: 1px solid black;
         display: block;
     }
 
     .hero-dos img{
-        width: 300px;
+        width: 400px;
     }
     
     .seguridad{
@@ -535,8 +552,9 @@ header nav{
     }
 
     .Segmento-dos .dos{
-        background-color: white;
+        background-color: #1A3284;
     }
+
 
     svg{
         display: none;
@@ -601,11 +619,16 @@ header nav{
 }
 
 @media (width>=1280px){
+    .perfo{
+        background-color: cornsilk;
+    }
+
 
     .perf section{
         justify-content: center;
         align-items: center;
         height: 60vh;
+        
     }
 
     .perf  h1{
@@ -617,11 +640,15 @@ header nav{
     }
     .perf p span{
         font-size:5rem ;
+        color: #2971BF;
     }
 
     .perf p{
+        border: none;
         font-size: 3rem;
         margin: 20vh auto;
+        background-color: cornsilk ;
+        color: black;
     }
 
 
@@ -644,6 +671,7 @@ header nav{
         mix-blend-mode: overlay;
 
     }
+
 
    .fondo-animado{
         width: 100%;
@@ -714,4 +742,9 @@ header nav{
     .partners h1{
         font-size: 6rem;
     }
+
+    .titulo-carrousel{
+        font-size: 7rem;
+    }
+
 }
