@@ -35,34 +35,111 @@
     
  }
 
- .input-check{
+ .servicio{
+      grid-template-columns: 5%, repeat(12,1fr),5%;
+   }
+
+   .themes-servicios{
+      grid-column: 2/14;
+   }
+
+   .themes-servicios ul{
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      margin: 0 80px;
+      gap: 5px;
+   }
+
+   .themes-servicios li{
+      height: auto;
+      padding: 20px;
+      border-radius: 30px;
+      border: 1px solid black;
+      font-size: 1.6rem;
+   }
+
+ @media (width<=768px){
+
+ .input-check,.input-check-dos,.input-check-tres{
    width: 30px;
    height: 30px;
    opacity: 0;
    cursor: pointer;
  }
 
-.input-check:checked  ~ .box-mision{
-   display: block;
+.input-check:checked  ~ .box-mision,
+.input-check-dos:checked  ~ .box-mision-dos,
+.input-check-tres:checked  ~ .box-mision-tres{
+   display: flex;
+   justify-content: space-around;
+   flex-direction: row;
    position: absolute;
-   top: 200px;
+   top: 70px;
+   left: 0;
    border: 1px solid black;
-   background-color: #1A3284;
-   
+   background-color: rgb(255, 255, 255);
+   padding: 20px;
+   border-radius: 30px;
+   opacity: 100;
+   font-weight: 200px;
+   z-index: 3;
+   width: 100%;
+   color: rgb(29, 19, 19);
+   font-size: 2.5rem;
+   gap: 20px;
+   animation-name: ocultar;
+   animation: ocultar 0.2s ease-in-out ;
+   animation-fill-mode: both;
 }
 
-.input-check:checked ~ .acerca-de-abajo{
-   opacity: 100;
-}
-.input-check ~ .acerca-de-abajo{
-   opacity: 0;
+
+@keyframes ocultar{
+   from{
+      transform: translateY(-100px);
+   }
+   to{
+      transform: translateY(0);
+   }
 }
 
-.input.check ~ .acerca-de-arriba{
-   opacity: 100;
+
+
+.input-check:checked  ~ .box-mision img,
+.input-check-dos:checked  ~ .box-mision-dos img,
+.input-check-tres:checked  ~ .box-mision-tres img{
+   width: 50%;
+   object-fit: contain;
+   background-size: cover;
+
 }
-.input.check:checked ~ .acerca-de-arriba{
-   opacity: 0;
+
+.acerca-de-box{
+   border: 1px solid black;
+}
+
+.input-check:checked ~ .acerca-de-abajo,
+.input-check-dos:checked ~ .acerca-de-abajo
+.input-check-tres:checked ~ .acerca-de-abajo{
+   display: none;
+}
+.input-check ~ .acerca-de-abajo,
+.input-check-dos ~ .acerca-de-abajo,
+.input-check-tres ~ .acerca-de-abajo{
+   display: block;
+}
+
+.input.check ~ .acerca-de-arriba,
+.input.check-dos ~ .acerca-de-arriba,
+.input.check-tres ~ .acerca-de-arriba{
+   display: none;
+}
+
+.input.check:checked ~ .acerca-de-arriba,
+input.check-dos:checked ~ .acerca-de-arriba,
+input.check-tres:checked ~ .acerca-de-arriba{
+   display: block;
 }
 
 .acerca-de-arriba, .acerca-de-abajo{
@@ -110,22 +187,126 @@
  }
 
  .themes-servicios{
-    grid-column: 2/14;
-    margin-bottom: 20px;
+   grid-column: 2/14;
+   margin-bottom: 20px;
+}
+
+.themes-servicios ul{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.themes-servicios li{
+   border: 1px solid black;
+   border-radius: 30px;
+   padding: 10px;
+}
+
+ .box-mision img,.box-mision-dos img, .box-mision-tres img{
+   display: none;
  }
 
- .themes-servicios ul{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
- }
-
- .themes-servicios li{
-    border: 1px solid black;
-    border-radius: 30px;
-    padding: 10px;
- }
+}
 
 
+@media (width>=768px){
+
+   .themes-servicios{
+      gap: 30px;
+   }
+   
+
+   .input-check, .input-check-dos, .input-check-tres,
+   .acerca-de-arriba, .acerca-de-abajo{
+      display: none;
+   }
+
+   .acerca-de-box{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .acerca-de-box h1{
+      border: 1px solid var(--blue-minimalist--);
+      border-radius: 30px;
+      text-align: center;
+      font-size: 4rem;
+      color: var(--blue-minimalist--);
+   }
+
+   .acerca-de-box p{
+      font-size: 2.5rem;
+      margin-bottom:20px;
+   }
+
+   .box-mision,.box-mision-dos, .box-mision-tres{
+      margin-top: 0;
+      padding: 30px;
+      border: 1px solid var(--blue-minimalist--);
+      border-radius: 30px;
+      margin-bottom: 30px;
+   }
+
+   .acerca-de-box img{
+      margin: 0 auto;
+      align-items: center;
+   } 
+
+}
+
+@media (width>=1280px){
+
+   .acerca-de article{
+      height: 1900px;
+      position: relative;
+   }
+
+   .acerca-de section{
+      width: 500px;
+      height: 300px;
+      position: absolute;
+   }
+
+   .ac-arti section:nth-child(2){
+      top: 10%;
+      left: 15%;
+   }
+   .ac-arti section:nth-child(3){
+      top: 40%;
+      left: 60%;
+   }
+
+   .ac-arti section:nth-child(4){
+      top: 57%;
+      left: 15%;
+   }
+
+   .box-mision,.box-mision-dos, .box-mision-tres{
+      border: none;
+   }
+
+   .ac-arti section h1{
+      font-size: 7rem;
+   }
+
+   .title-acerca-de{
+      text-align: center;
+      font-size: 8.5rem;
+      color: white;
+   }
+
+   .ac-arti{
+      margin: 30px 0;
+      padding: 30px;
+      border-radius: 30px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+      background-image: url(https://img.freepik.com/foto-gratis/fondo-dia-mundial-turismo-espacio-copia_23-2148608803.jpg?w=740&t=st=1700615843~exp=1700616443~hmac=b274eba550d3a144318d02e9ebe5e581cecb15dd3849409cd788b8e7869403fb);
+   }
 
 
+
+
+}
