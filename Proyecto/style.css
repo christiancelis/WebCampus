@@ -9,7 +9,9 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
   }
 
   .fondo-animado, .sombra{
