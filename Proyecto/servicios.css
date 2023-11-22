@@ -20,10 +20,74 @@
      text-decoration: none;
  }
 
- 
+
+ .serv article{
+    grid-column: 2/14;
+ }
+
+ .serv article h1{
+    text-align: center;
+    font-size:5rem;
+ }
+
+ .serv article img:nth-child(2){
+    width: 100%;
+
+ }
+
+
+
+
 
 
 @media (width<=768px){
+    .serv-principal{
+        padding: 20px;
+        border-radius: 30px;
+        margin: 30px 0;
+        overflow-x: hidden;
+        border: 1px solid black;
+        width: 100%;
+        height: 300px;
+    }
+    .serv-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    .serv-container img{
+        height: 100px;
+    }
+    .serv-container, button{
+        font-size: 2rem;
+    }
+
+    .serv-principal .serv-show{
+        display: none;
+    }
+
+    .check-serv:checked ~.serv-show{
+        display: block;
+    }
+
+    .check-serv:checked ~.img-serv{
+        display: none;
+    }
+
+    .check-serv{
+        display: absolute;
+    }
+
+    .button-serv{
+        pointer-events: none;
+    }
+
+
 
 }
 
