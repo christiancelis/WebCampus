@@ -1,0 +1,36 @@
+:root{
+    --orange-minimalist--: #D9B080;
+     --blue-minimalist--: #1A3284;
+     --yellow-minimalist--: #D6CA77;
+     --blue-aqua-minimalist--: #2971BF;
+     --aqua-minimalist--: #57BED1;
+ }
+ 
+ html {
+     font-size: 62.5%;
+     /* font-family: 'Manrope', sans-serif; */
+     font-family: 'Poppins', sans-serif;
+   }
+ 
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     text-decoration: none;
+ }
+
+ 
+
+
+@media (width<=768px){
+
+}
+
+@media (width>=768px){
+
+}
+
+@media (width>=1280px){
+
+}
