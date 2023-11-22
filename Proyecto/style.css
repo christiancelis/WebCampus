@@ -22,6 +22,58 @@ html {
     padding: 0;
     list-style: none;
     text-decoration: none;
+
+}
+
+body{
+    position: relative;
+}
+
+.icon-search, .search-bar{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(7, 104, 248);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 4;
+    bottom: 50px;
+    right: 5%;
+    border: 1px solid black;
+}
+.icon-search{
+    pointer-events: none;
+}
+.search-bar{
+    opacity: 0;
+}
+
+.icon-search img:hover{
+    width: 60px;
+    height: 60px;
+    border: 1px solid yellow;
+}
+
+.search-bar-appeard{
+    padding: 20px;
+    bottom: 50px;
+    right: 20%;
+    border: 1px solid black;
+    display: none;
+    z-index: 4;
+    position: fixed;
+    width: 30vh;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+
+}
+.search-bar:checked ~ .search-bar-appeard{
+    display: block;
+}
+
+.icon-search img{
+    height: 50px;
+    padding: 10px;
 }
 
 .Segmento-uno{
