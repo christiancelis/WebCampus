@@ -22,8 +22,9 @@ html {
     padding: 0;
     list-style: none;
     text-decoration: none;
-
+  
 }
+
 
 body{
     position: relative;
@@ -70,6 +71,7 @@ body{
 .search-bar:checked ~ .search-bar-appeard{
     display: block;
 }
+
 
 .icon-search img{
     height: 50px;
