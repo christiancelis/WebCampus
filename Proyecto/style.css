@@ -172,7 +172,6 @@ header nav{
         font-weight: 700;
         font-size: 2rem;
         color: var(--blue-minimalist--);
-
     }
 
     .hero:hover{
@@ -266,7 +265,6 @@ header nav{
         flex-direction: row;
         justify-content: space-around;
         gap: 20px;
-      
     }
 
     .perf p{
@@ -456,13 +454,19 @@ header nav{
 
     .center-menu li{
         padding:20px;
-        border: solid 2px black;
+    }
+
+    [class="icheck"]:checked ~ .center-menu a{
+        border: 1px solid black;
+        padding: 20px;
+        font-size: 2rem;
+        background-color: white;
     }
         
     [class="icheck"]:checked ~ .center-menu{
         display: block;
-        width: 200px;
-        background-color: white;
+        width: 300px;
+        background-color: transparent;
         transition: all 20ms ease-in-out ;
     }
     
