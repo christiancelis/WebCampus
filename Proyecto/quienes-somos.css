@@ -165,16 +165,16 @@
    display: block;
 }
 
-.input.check ~ .acerca-de-arriba,
-.input.check-dos ~ .acerca-de-arriba,
-.input.check-tres ~ .acerca-de-arriba{
-   display: none;
+.input-check ~ .acerca-de-arriba,
+.input-check-dos ~ .acerca-de-arriba,
+.input-check-tres ~ .acerca-de-arriba{
+   opacity: 0;;
 }
 
-.input.check:checked ~ .acerca-de-arriba,
-input.check-dos:checked ~ .acerca-de-arriba,
-input.check-tres:checked ~ .acerca-de-arriba{
-   display: block;
+.input-check:checked ~ .acerca-de-arriba,
+.input-check-dos:checked ~ .acerca-de-arriba,
+.input-check-tres:checked ~ .acerca-de-arriba{
+   opacity: 100;
 }
 
 .acerca-de-arriba, .acerca-de-abajo{

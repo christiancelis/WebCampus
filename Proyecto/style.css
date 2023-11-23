@@ -913,4 +913,19 @@ header nav{
         font-size: 7rem;
     }
 
+
+    body:has(.darkmode:checked) .perfo{
+        background-color: #252931;
+    }
+
+    body:has(.darkmode:checked) .perf section p{
+        color: white;
+    }
+
+    
+    body:has(.darkmode:checked) .perf p{
+        background-color: #252931;
+    }
+
+
 }
