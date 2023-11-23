@@ -251,15 +251,15 @@ input.check-tres:checked ~ .acerca-de-arriba{
    }
 
    .acerca-de-box h1{
-      border: 1px solid var(--blue-minimalist--);
+      border: 1px solid black;
       border-radius: 30px;
       text-align: center;
-      font-size: 4rem;
+      font-size: 3rem;
       color: var(--blue-minimalist--);
    }
 
    .acerca-de-box p{
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom:20px;
    }
 

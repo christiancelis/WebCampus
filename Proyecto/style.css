@@ -32,6 +32,51 @@ body{
     position: relative;
 }
 
+
+ .dark-mode,.darkmode{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 160px;
+    right: 5%;
+    z-index: 4;
+    
+}
+
+.darkmode{
+    border-radius: 50%;
+    opacity: 0;
+}
+
+body:has(.darkmode:checked):not(nav){
+    background-color: #252931;
+    color: white;
+}
+
+
+body:has(.darkmode:checked) header img
+{
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+}
+
+body:has(.darkmode:checked) header a{
+    color: white;
+}
+
+.icon-dark, .dark-mode{
+    pointer-events: none;
+}
+
+.icon-dark{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 50%;
+}
+
 .icon-search, .search-bar{
     width: 50px;
     height: 50px;
@@ -39,7 +84,7 @@ body{
     border-radius: 50%;
     position: fixed;
     z-index: 4;
-    bottom: 50px;
+    top: 100px;
     right: 5%;
     border: 1px solid black;
 }
@@ -57,6 +102,7 @@ body{
 }
 
 .search-bar-appeard{
+    top: 100px;
     padding: 20px;
     bottom: 50px;
     right: 20%;
@@ -64,12 +110,17 @@ body{
     display: none;
     z-index: 4;
     position: fixed;
-    width: 70%;
+    width: 50vh;
     height: 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
 
 }
+
+.search-bar-appeard:hover{
+    border: 3px var(--blue-minimalist--) solid;
+}
+
 .search-bar:checked ~ .search-bar-appeard{
     display: block;
 }
@@ -557,10 +608,25 @@ header nav{
         font-size: 3rem;
     }
 
+    .Segmento-dos .dos{
+        background-color: #1A3284;
+    }
+
+
     .seguridad{
         grid-column: 2/14;
-       }
+        display: flex;
+        margin: 50px 0;
+    }
 
+    .caja{
+        width: 600px;
+    }
+
+    .caja section {
+        font-weight: 300;
+    }
+    
     .icheck , .abrir, .cerrar{
         display: none;
     }
@@ -622,8 +688,9 @@ header nav{
         font-size: 4rem;
     }
 
+
     .hero section span{
-        font-size: 5rem;
+        font-size: 8rem;
     }
 
     .hero button{
@@ -643,15 +710,7 @@ header nav{
         width: 400px;
     }
     
-    .seguridad{
-        display: flex;
-        margin: 50px 0;
-    }
-
-    .Segmento-dos .dos{
-        background-color: #1A3284;
-    }
-
+  
 
     svg{
         display: none;
