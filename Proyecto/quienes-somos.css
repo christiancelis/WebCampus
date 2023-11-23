@@ -20,6 +20,17 @@
      text-decoration: none;
  }
 
+ .box-mision img,.box-mision-dos img,.box-mision-tres img{
+   width: 150px;
+ }
+
+ .box-mision,.box-mision-dos,.box-mision-tres{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
  .quienes-sms{
    margin: 60px 0;
    display: grid;
