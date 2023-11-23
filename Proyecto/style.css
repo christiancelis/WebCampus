@@ -503,11 +503,15 @@ header nav{
 
 @media (width<=768px){
 
-    .icon-search img,.search-bar, .icon-search, .dark-mode, .dark-mode img, .darkmode{
+    .icon-dark,.search-bar, .icon-search img, .icon-search, .dark-mode, .dark-mode img, .darkmode{
         width: 35px;
         height: 35px;
     }
-    
+
+    .search-bar-appeard{
+        height: 35px;
+    }
+
     .center-menu li{
         padding:20px;
     }
