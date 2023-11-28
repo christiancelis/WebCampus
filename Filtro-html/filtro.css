@@ -1,0 +1,300 @@
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% repeat(12, 1fr) 5%;
+}
+
+
+main, .cont-uno,.cont-tres{
+    
+    grid-column: 2/14;
+    
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    grid-template-columns: 5% repeat(12, 1fr) 5%;
+    display: grid;
+    grid-column: 1/-1;
+}
+
+
+nav ul li a{
+    padding: 5px;
+}
+
+nav a:hover{
+    color: #5E5D6E;
+}
+
+nav{
+    width: 100%;
+    grid-column: 2/14;
+    max-width: 1024px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.cont-hero{
+    margin-top: 70px ;
+    grid-column: 1/-1;
+    background: url(./imgs/enium-fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cont-uno, .cont-dos, .cont-tres{
+    padding: 40px 0;
+    height: auto;
+}
+
+.cont-uno .primer-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.primer-contenido p, .primer-contenido h1, .primer-contenido button{
+    margin: 12px 0;
+}
+
+.primer-contenido h1{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.primer-contenido button{
+    font-size: 1em;
+    text-align: center;
+    padding: 15px 40px;
+    width: auto;
+    height: 60px;
+    color: white;
+    background-color: black;
+    transition: background 0.5s linear;
+}
+
+.primer-contenido button:hover{
+    animation-name: background;
+    -webkit-transition:background 1s linear;
+    background-color: #4A4959;
+    font-size: 1.1em;
+}
+
+
+
+.cont-dos{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 5% repeat(12, 1fr) 5%;
+    background-color:#1C1D22;
+    color: white;
+
+}
+
+.cont-dos article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+    grid-column: 2/14;
+}
+
+.fa-star, .fa-thumbs-up, .fa-check{
+    display: none;
+    font-size: 2.7em;
+    color: white;
+    margin: 20px;
+}
+
+
+
+.cont-dos div{
+    text-align: center;
+}
+
+.cont-tres article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont-tres img{
+    width: 100%;
+}
+
+.cont-tres section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+
+.cont-tres h1{
+    margin: 10px 0;
+}
+
+.cont-tres section p{
+    text-align: justify;
+    margin: 10px 0;
+}
+
+footer{
+    grid-column: 1/-1;
+    height: 80px;
+    background-color: black;
+}
+
+footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primer-contenido{
+    text-align: center;
+    margin: 100px 0;
+    padding: 40px;
+}
+
+
+@media (width<=768px){
+    .primer-contenido{
+        text-align: center;
+        margin: 100px 0;
+        padding: 10px;
+    }
+    
+    .cont-uno{
+        padding: 20px;
+    }
+    .cont-uno p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .cont-dos img{
+        display: none;
+    }
+
+    .cont-dos section div{
+        margin-top: 60px;
+    }
+
+
+    .cont-dos article h1{
+        margin: 30px;
+    }
+
+    .cont-tres{
+        padding: 10px;
+    }
+
+    .cont-tres section div{
+        padding: 20px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 30px;
+
+    }
+
+    nav li{
+        font-size: 0.6rem;
+    }
+}
+
+
+
+@media (width>=768px){
+    .cont-dos section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .cont-dos div{
+        width: 200px;
+    }
+
+    .cont-tres section div{
+        width: 40%;
+    }
+    
+
+    .cont-tres section{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media (width>=1026px){
+    .cont-dos div{
+        margin: 70px 100px;
+    }
+    .cont-dos i{
+       padding: 20px;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav{
+        width: 1024px;
+    }
+
+    .cont-uno{
+        padding: 100px 100px;
+    }
+
+    .fa-star, .fa-thumbs-up, .fa-check{
+        display: block;
+    }
+
+    .cont-tres div img{
+        margin: 10px;
+    }
+
+
+    
+
+
+}
+
